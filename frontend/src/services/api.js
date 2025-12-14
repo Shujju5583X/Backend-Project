@@ -1,8 +1,13 @@
 import axios from 'axios';
 
+// Determine the API base URL based on environment
+// In production (Netlify), use the full Render backend URL
+// In development, use the Vite proxy (/api/v1)
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api/v1';
+
 // Create axios instance with default config
 const api = axios.create({
-    baseURL: '/api/v1',
+    baseURL: API_BASE_URL,
     headers: {
         'Content-Type': 'application/json',
     },

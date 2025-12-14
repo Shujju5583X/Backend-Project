@@ -1,0 +1,30 @@
+# Render Blueprint specification
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: task-api-backend
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: task-api-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: "7d"
+      - key: FRONTEND_URL
+        sync: false  # Set this manually to your Netlify URL
+
+databases:
+  - name: task-api-db
+    plan: free
+    databaseName: taskapi
+    user: taskapi_user

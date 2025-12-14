@@ -289,6 +289,22 @@ See [docs/SCALABILITY.md](docs/SCALABILITY.md) for detailed notes on:
 
 ---
 
+## 🌍 Deployment
+
+This project is configured for easy deployment:
+
+- **Backend**: Deploy to [Render](https://render.com) with the included `render.yaml` blueprint
+- **Frontend**: Deploy to [Netlify](https://netlify.com) with the included `netlify.toml` config
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed step-by-step instructions.
+
+### Live Demo (Update after deployment)
+- **Frontend**: `https://your-app.netlify.app`
+- **Backend API**: `https://your-app.onrender.com/api/v1`
+- **API Documentation**: `https://your-app.onrender.com/api/docs`
+
+---
+
 ## 📝 License
 
 MIT License - feel free to use this project as a template.
