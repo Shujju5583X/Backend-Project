@@ -52,9 +52,11 @@ Before deploying, ensure you have:
    | **Branch** | `main` |
    | **Root Directory** | `backend` |
    | **Runtime** | Node |
-   | **Build Command** | `npm install && npx prisma generate && npm run build` |
+   | **Build Command** | `npm install && npx prisma generate && npx prisma db push && npm run build` |
    | **Start Command** | `npm start` |
    | **Plan** | Free |
+
+   > **Note**: We moved devDependencies to dependencies to ensure Render installs TypeScript types. If you revert this, use `npm install --include=dev`.
 
 3. **Add Environment Variables**
    
@@ -180,7 +182,10 @@ After both deployments are complete:
 **Build fails with Prisma error**
 ```bash
 # Ensure prisma generate is in build command
-npm install && npx prisma generate && npm run build
+# Ensure TypeScript types are available
+npm install --include=dev && npx prisma generate && npx prisma db push && npm run build
+
+# OR ensuring packages are in 'dependencies' not 'devDependencies'
 ```
 
 **Database connection fails**

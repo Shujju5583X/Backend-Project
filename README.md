@@ -298,10 +298,27 @@ This project is configured for easy deployment:
 
 See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed step-by-step instructions.
 
-### Live Demo (Update after deployment)
-- **Frontend**: `https://your-app.netlify.app`
-- **Backend API**: `https://your-app.onrender.com/api/v1`
-- **API Documentation**: `https://your-app.onrender.com/api/docs`
+### Live Demo
+- **Frontend**: [https://task-api-frontend.netlify.app](https://task-api-frontend.netlify.app) _(Replace with your actual Netlify URL)_
+- **Backend API**: [https://task-api-backend-2qy2.onrender.com/api/v1](https://task-api-backend-2qy2.onrender.com/api/v1)
+- **API Documentation**: [https://task-api-backend-2qy2.onrender.com/api/docs](https://task-api-backend-2qy2.onrender.com/api/docs)
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Runtime** | Node.js |
+| **Framework** | Express.js |
+| **Language** | TypeScript |
+| **Database** | PostgreSQL |
+| **ORM** | Prisma |
+| **Auth** | JWT + bcrypt |
+| **Validation** | Zod |
+| **Docs** | Swagger/OpenAPI |
+| **Frontend** | React + Vite |
+| **Deployment** | Render (Backend) + Netlify (Frontend) |
 
 ---
 
