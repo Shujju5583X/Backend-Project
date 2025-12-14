@@ -207,7 +207,7 @@ npm install --include=dev && npx prisma generate && npx prisma db push && npm ru
 - Verify `VITE_API_URL` is set correctly in Netlify environment variables
 
 **Routes return 404**
-- Ensure `netlify.toml` is in the `frontend` directory
+- Ensure `netlify.toml` is in the **root** directory (moved from frontend)
 - The `[[redirects]]` rule handles SPA routing
 
 ### Cookie Issues (Authentication not persisting)
