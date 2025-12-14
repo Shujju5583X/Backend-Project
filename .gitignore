@@ -1,41 +1,54 @@
 # Dependencies
 node_modules/
+.pnpm-store/
 
 # Build output
 dist/
 build/
+out/
+coverage/
 
 # Environment files
 .env
-.env.local
-.env.*.local
-.env.production
+.env.*
 !.env.example
 !.env.production.example
+!.env.test.example
 
-# IDE
+# IDE & Editor
 .vscode/
 .idea/
 *.swp
 *.swo
+*.swn
+*.iml
+.editorconfig
 
 # OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
 # Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Test coverage
-coverage/
-
-# Prisma
+# Prisma (if applicable in root)
 *.db
 *.db-journal
 
 # Cache
 .cache/
 .npm/
+.eslintcache
+
