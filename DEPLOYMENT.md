@@ -214,7 +214,7 @@ npm install --include=dev && npx prisma generate && npx prisma db push && npm ru
 
 If users can login but get logged out immediately:
 
-1. Update the backend to use `SameSite=None; Secure` for cookies in production
+1. The backend is configured to use `SameSite=None; Secure` for cookies in production. Ensure your `FRONTEND_URL` variable is set correctly.
 2. Ensure your frontend uses `withCredentials: true` in axios (already configured)
 
 ---
