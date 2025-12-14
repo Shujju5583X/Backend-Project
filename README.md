@@ -300,7 +300,3 @@ MIT License - feel free to use this project as a template.
 **Syed Shujatullah**
 
 ---
-
-## 🙏 Acknowledgments
-
-Built for the Backend Developer Intern assignment at Bajarangs/PrimeTrade.AI
